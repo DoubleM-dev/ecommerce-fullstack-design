@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": "1782470693786",
+      "name": "Admin",
+      "email": "admin@shop.com",
+      "password": "$2b$10$F/B5oaC7g.EQfcQxKnFCtek.ZMT12C3Fe.SBiew6hVgNFoyiIHL8a",
+      "role": "admin",
+      "createdAt": "2026-06-26T10:44:53.786Z"
+    }
+  ]
+}

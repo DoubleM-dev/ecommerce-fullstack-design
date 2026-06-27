@@ -20,7 +20,8 @@ export default function AdminPage() {
 
   const showToast = msg => { setToast(msg); setTimeout(() => setToast(''), 3000); };
   const fetch_ = () => { adminGetProducts(token).then(r => setProducts(r.data||[])).finally(() => setLoading(false)); };
-  useEffect(() => { fetch_(); }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+useEffect(() => { fetch_(); }, []);
 
   const openAdd = () => { setForm(EMPTY); setEditId(null); setShowForm(true); };
   const openEdit = p => {

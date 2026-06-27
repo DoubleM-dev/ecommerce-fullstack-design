@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, ShieldCheck, MessageSquare, Truck, ShoppingCart } from 'lucide-react';
 import { useCart } from '../context/CartContext';
-import ProductCard from '../components/ProductCard';
 import { getProducts } from '../services/api';
 
 export default function CartPage() {

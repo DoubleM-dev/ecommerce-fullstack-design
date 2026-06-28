@@ -53,7 +53,7 @@ app.get('/api/products/:id', (req, res) => {
 
 app.get('/api/health', (req, res) => res.json({ success: true, message: 'API running' }));
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`🚀 Server running at http://localhost:${PORT}`);
   console.log(`📦 API: http://localhost:${PORT}/api/products`);
 });

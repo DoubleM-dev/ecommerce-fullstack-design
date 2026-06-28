@@ -11,7 +11,15 @@ const adapter = new FileSync('db.json');
 const db = low(adapter);
 db.defaults({ products: [] }).write();
 
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "https://ecommerce-fullstack-design-te38.vercel.app",
+    ],
+    credentials: true,
+  }),
+);
 app.use(express.json());
 
 app.use('/api/auth', require('./routes/auth'));

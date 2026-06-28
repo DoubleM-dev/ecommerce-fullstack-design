@@ -1,4 +1,4 @@
-const BASE_URL = "https://your-app.onrender.com/api";
+const BASE_URL = "https://ecommerce-fullstack-design-1-7oha.onrender.com/api";
 
 async function request(path) {
   const res = await fetch(`${BASE_URL}${path}`);
